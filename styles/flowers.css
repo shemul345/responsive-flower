@@ -19,13 +19,20 @@
     font-style: normal;
 }
 
-.primary_width {
+.container {
     max-width: 1140px;
     margin: 0 auto 120px auto;
 }
 
 .display_flex {
     display: flex;
+}
+
+.section_description{
+    font-family: "Inter", sans-serif;
+    font-size: 1.375rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 15px;
 }
 
 
@@ -40,17 +47,67 @@
 }
 
 .navbar {
-    gap: 20px;
+    gap: 48px;
 }
 
 .nav_item {
-    gap: 20px;
+    gap: 48px;
 }
 
 .nav_item li {
     list-style: none;
+   
 }
 
 .nav_item li a {
     text-decoration: none;
+    color: #8987A1;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+#home{
+    color: #000000;
+}
+.cart span{
+    font-size: 1.25rem;
+}
+
+/* banner related styles */
+.banner{
+    margin-top: 120px;
+    justify-content: center;
+    align-items: center;
+}
+.banner_title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner_title_style{
+    color: #E95A08;
+}
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .menubar,
+    .navbar,
+    .nav_item{
+        flex-direction: column;
+    }
+
+   .menubar,
+   .navbar,
+   .nav_item{
+    gap: 30px;
+   }
+
+   .banner{
+    flex-direction: column-reverse;
+    gap: 30px;
+   }
+   .banner_img{
+    width: 100%;
+   }
 }
