@@ -34,6 +34,25 @@
     color: rgba(0, 0, 0, 0.5);
     margin-top: 15px;
 }
+.section_title{
+    font-family: "Noto Serif", serif;
+    font-size: 3rem;
+}
+.section_title_style {
+    color: #E95A08;
+}
+.text_center{
+    text-align: center;
+}
+.card_btn{
+    font-weight: 600;
+    background-color: #E95A08;
+    padding: 20px 0;
+    width: 100%;
+    color: #ffffff;
+    border: none;
+}
+
 
 
 /* navbar styles */
@@ -82,9 +101,35 @@
     font-size: 4rem;
     font-weight: 700;
 }
-.banner_title_style{
-    color: #E95A08;
+
+/* our plants related styles */
+.plants_section_desc{
+    max-width: 888px;
+    margin: 15px auto 50px auto;
 }
+
+.plant_items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+}
+.card_img{
+    width: 100%;
+}
+
+.card_title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.price{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
 
 
 
@@ -106,8 +151,17 @@
    .banner{
     flex-direction: column-reverse;
     gap: 30px;
+    margin-top: 50px;
    }
    .banner_img{
+    width: 100%;
+   }
+   .plant_items{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+    row-gap: 25px;
+   }
+   .plants_section_desc{
     width: 100%;
    }
 }
