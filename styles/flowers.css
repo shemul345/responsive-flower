@@ -21,7 +21,7 @@
 
 .container {
     max-width: 1140px;
-    margin: 0 auto 120px auto;
+    margin: 0 auto;
 }
 
 .display_flex {
@@ -58,6 +58,7 @@
 /* navbar styles */
 .header {
     margin-top: 30px;
+    margin-bottom: 120px;
 }
 
 .menubar {
@@ -113,6 +114,7 @@
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
     row-gap: 30px;
+    margin-bottom: 230px;
 }
 .card_img{
     width: 100%;
@@ -130,16 +132,44 @@
     margin-bottom: 20px;
 }
 
+/* flowers and plants lover styles */
+.lovers{
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+.lover_items{
+    position: relative;
+}
+.lover_image{
+    display: block;
+}
+.trusted_badge{
+    position: absolute;
+    width: 280px;
+    top: -125px;
+    right: -100px;
+}
+.lover_title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.lover_content ul li{
+    margin-top: 25px;
+}
 
 
 
 
 
 @media screen and (max-width: 576px) {
-    .menubar,
-    .navbar,
-    .nav_item{
+    
+    .lovers{
         flex-direction: column;
+    }
+    .nav_item,
+    .trusted_badge{
+        display: none;
     }
 
    .menubar,
@@ -153,15 +183,22 @@
     gap: 30px;
     margin-top: 50px;
    }
-   .banner_img{
+   .banner_img,
+   .lover_image{
     width: 100%;
    }
    .plant_items{
     grid-template-columns: repeat(2, 1fr);
     column-gap: 15px;
     row-gap: 25px;
+    margin-bottom: 60px;
    }
    .plants_section_desc{
     width: 100%;
+   }
+   .lover_content,
+   .menubar{
+    width: 90%;
+    margin: 0 auto;
    }
 }
