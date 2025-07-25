@@ -58,49 +58,49 @@
                     <img src="./assets/sample-flower-image.png" alt="" class="card_img">
                     <p class="card_title">Lily Blossom</p>
                     <p class="price">20 USD</p>
-                    <a href=""><button class="card_btn">ADD TO CART</button></a>
+                    <a href=""><button class="card_btn" onclick="myFunction()">ADD TO CART</button></a>
                 </div>
                 <div class="plant_card inter_normal">
                     <img src="./assets/sample-flower-image.png" alt="" class="card_img">
                     <p class="card_title">Lily Blossom</p>
                     <p class="price">20 USD</p>
-                    <a href=""><button class="card_btn">ADD TO CART</button></a>
+                    <a href=""><button class="card_btn" onclick="myFunction()">ADD TO CART</button></a>
                 </div>
                 <div class="plant_card inter_normal">
                     <img src="./assets/sample-flower-image.png" alt="" class="card_img">
                     <p class="card_title">Lily Blossom</p>
                     <p class="price">20 USD</p>
-                    <a href=""><button class="card_btn">ADD TO CART</button></a>
+                    <a href=""><button class="card_btn" onclick="myFunction()">ADD TO CART</button></a>
                 </div>
                 <div class="plant_card inter_normal">
                     <img src="./assets/sample-flower-image.png" alt="" class="card_img">
                     <p class="card_title">Lily Blossom</p>
                     <p class="price">20 USD</p>
-                    <a href=""><button class="card_btn">ADD TO CART</button></a>
+                    <a href=""><button class="card_btn" onclick="myFunction()">ADD TO CART</button></a>
                 </div>
                 <div class="plant_card inter_normal">
                     <img src="./assets/sample-flower-image.png" alt="" class="card_img">
                     <p class="card_title">Lily Blossom</p>
                     <p class="price">20 USD</p>
-                    <a href=""><button class="card_btn">ADD TO CART</button></a>
+                    <a href=""><button class="card_btn" onclick="myFunction()">ADD TO CART</button></a>
                 </div>
                 <div class="plant_card inter_normal">
                     <img src="./assets/sample-flower-image.png" alt="" class="card_img">
                     <p class="card_title">Lily Blossom</p>
                     <p class="price">20 USD</p>
-                    <a href=""><button class="card_btn">ADD TO CART</button></a>
+                    <a href=""><button class="card_btn" onclick="myFunction()">ADD TO CART</button></a>
                 </div>
                 <div class="plant_card inter_normal">
                     <img src="./assets/sample-flower-image.png" alt="" class="card_img">
                     <p class="card_title">Lily Blossom</p>
                     <p class="price">20 USD</p>
-                    <a href=""><button class="card_btn">ADD TO CART</button></a>
+                    <a href=""><button class="card_btn" onclick="myFunction()">ADD TO CART</button></a>
                 </div>
                 <div class="plant_card inter_normal">
                     <img src="./assets/sample-flower-image.png" alt="" class="card_img">
                     <p class="card_title">Lily Blossom</p>
                     <p class="price">20 USD</p>
-                    <a href=""><button class="card_btn">ADD TO CART</button></a>
+                    <a href=""><button class="card_btn" onclick="myFunction()">ADD TO CART</button></a>
                 </div>
             </div>
         </section>
@@ -163,8 +163,8 @@
          <section class="join">
             <div class="join_content text_center">
                 <h4 class="join_title noto_serif_normal">Join the colorful Bunch</h4>
-                <input type="email" name="" id="" placeholder="Write email">
-                <a href=""><button class="join_btn inter_normal">Subscribe</button></a>
+                <input type="email" name="" id="" placeholder="Write email" required>
+                <a href=""><button class="join_btn inter_normal" onclick="joinFunction()">Subscribe</button></a>
             </div>
          </section>
         <!-- Join section end -->
@@ -203,6 +203,16 @@
          </section>
         <!-- footer section end -->
     </footer>
+
+
+    <script>
+        function myFunction(){
+            alert("Are you sure choose this product?");
+        }
+        function joinFunction(){
+            alert("Are you confirm it's your email?")
+        }
+    </script>
 </body>
 
 </html>

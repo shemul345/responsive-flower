@@ -57,6 +57,13 @@
     border: none;
 }
 
+.card_btn:hover, .join_btn:hover{
+    /* background-color: #090040; */
+    background-image: linear-gradient(#090040, #344C64);
+    color: #ffffff;
+    letter-spacing: 2px;
+    transition: all .5s;
+}
 
 
 /* navbar styles */
@@ -156,11 +163,15 @@
     display: block;
 }
 
+@-webkit-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
 .trusted_badge {
     position: absolute;
     width: 280px;
     top: -125px;
     right: -100px;
+    -webkit-animation: spin 5s linear infinite;
 }
 
 .lover_title {
